@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    padding: 48px 0 42px 100px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.navigation__form {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 60px;
+    font: 500 16px/29px 'Fira Sans', sans-serif;
+}
+
+.button_type_prev {
+    cursor: pointer;
+    background-color: #999591;
+    padding: 20px 23px;
+    margin-right: 50px;
+    color: #fff;
+    border-color: #999591;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.button-gap {
+    margin-right: 20px;
+}
+
+.slider__slides {
+    display: flex;
+    gap: 20px;
+    transition: all 2s;
+    max-width: 1720px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 104px auto 0;
+}
+
+.slider__slide {
+    background-color: #F6F6F6;
+    position: relative;
+    max-width: 560px;
+}
+
+.slider__header {
+    font: 700 26px/46px 'Inter', sans-serif;
+    color: #5873BA;
+    padding: 45px 0 0 39px;
+}
+
+.slider__text {
+    font: 26px/42px 'Inter', sans-serif;
+    color: #15100F;
+    margin-bottom: 120px;
+    padding: 45px 0 0 39px;
+}
+
+.slider__text_fullInformation {
+    color: #999591;
+    font: 22px/26px 'Inter', sans-serif;
+    text-align: right;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 74px 63px 0;
+    /* vertical-align: bottom; */
+}
+
+.footer {
+    display: flex;
+    background-color: #15100F;
+    max-width: 1920px;
+    justify-content: space-between;
+    padding: 90px 99px 83px 100px;
+    margin-top: 134px;
+}
+
+.footer__link {
+    font: 20px/36px 'Inter', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer__contact-info {
+    display: flex;
+    gap: 40px;
+}
+
+@media screen and (max-width: 560px) {
+    .slider__slide {
+        max-width: 360px;
+    }
+
+    .slide__img {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .contacts {
+        display: none;
+    }
+
+    .footer__link {
+        font: 10px/18px 'Inter', sans-serif;
+    }
+
+    .footer {
+        padding: 23px 14px;
+    }
+}
+
